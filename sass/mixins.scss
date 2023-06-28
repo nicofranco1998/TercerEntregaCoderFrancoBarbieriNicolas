@@ -1,0 +1,21 @@
+@mixin texto-destacado {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+  
+  @mixin boton-grande {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    color: white;
+}
+  
+
+.containerTexto h1 {
+    @include texto-destacado;
+}
+  
+.containerH2 h2 button {
+    @include boton-grande;
+}

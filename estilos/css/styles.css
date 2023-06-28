@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Imagen banner */
+.containerBanner{
+    background-image: url(/imagenes/banner.jpg);
+    height: 1080px;
+    background-size: cover;
+    background-position: center;
+}
+
+.containerTexto{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.containerTexto p{
+    font-size: 16px;
+}
+
+.containerTexto h1{
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.containerTexto a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Main */
+ .containerMain{
+    display: grid;
+    background-color: beige;
+    width: 100%;
+    background-size: cover;
+}
+
+.containerH2 h2{
+    text-align: center;
+    align-items: center;
+    color: black;
+    
+}
+
+.containerH2 h2 button{
+    background-color: peru;
+    height: 80px;
+    width: 300px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.containerSugerenciasTexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    min-width: 250px;
+} 
+
+
+/* Torta */
+.containerTortas{
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.containerTortas a img{
+    display: flex;
+    height: 400px;
+    width: 260px;
+    border-radius: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.containerTortas p{
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.containerTortas p a{
+    align-items: center;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Cafe */
+
+.containerCafes{
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.containerCafes a img{
+    display: flex;
+    height: 400px;
+    width: 260px;
+    border-radius: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.containerCafes p{
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.containerCafes p a{
+    align-items: center;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Pan */
+
+.containerPanes{
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.containerPanes a img{
+    display: flex;
+    height: 400px;
+    width: 260px;
+    border-radius: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.containerPanes p{
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.containerPanes p a{
+    align-items: center;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+
+/* Video */
+
+.containerVideo{
+    display: flex;
+    height: 1200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(65, 64, 64);
+}
+
+.containerVideo iframe{
+  height: 920px;
+  width: 1280px;
+  border-radius: 60px;
+}
+
+
+/* Media Querys */
+   
+@media screen and (max-width: 450px) {
+    .containerSugerenciasTexto{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1200px){
+    .containerSugerenciasTexto{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .containerVideo {
+        width: 100%;
+        height: 100%;
+    }   
+}
+
+@media screen and (max-width: 450px) {
+    .containerVideo iframe{
+        width: 250px;
+        height: 500px;
+        padding: 20px;
+    }   
+}
+
+/* Imagenes del menu */
+.containerImagenMenuBanner{
+    width: 100%;
+    height: 1200px;
+    background-image: url(/imagenes/blog-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Carousel cafe */
+
+.containerImagenesMenu{
+    display: flex;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+
+#carouselExample{
+    width: 600px;
+    height: 600px;
+}
+
+/* Carousel tortas */
+#carouselExampleFade{
+    width: 600px;
+    height: 600px;
+}
+
+.carousel-item{
+    width: 600px;
+    height: 600px;
+    background-position: center;
+    
+}
+
+.carousel-item img{
+    border-radius: 20px;
+}
+
+/* Nosotros */
+
+.containerT1{
+    display: flex;
+}
+.containerT1 img{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.containerT2{
+    display: flex;
+}
+.containerT2 img{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.containerT3{
+    display: flex;
+}
+.containerT3 img{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+
+
+.containerMainCarouselNosotros{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.containerFooter{
+    text-align: center;
+}
+.containerFooter a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Estilos del formulario de contacto */
+
+
+.containerFormulario{
+    background-color: bisque;
+}

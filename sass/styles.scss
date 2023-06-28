@@ -1,0 +1,278 @@
+$color_1: black;
+
+/* Imagen banner */
+/* Main */
+/* Torta */
+/* Cafe */
+/* Pan */
+/* Video */
+/* Media Querys */
+/* Imagenes del menu */
+/* Carousel cafe */
+/* Carousel tortas */
+/* Nosotros */
+/* Footer */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.containerBanner {
+	background-image: url(../imagenes/banner.jpg);
+	height: 1080px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.containerTexto {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	p {
+		font-size: 16px;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-size: 32px;
+	}
+	a {
+		font-size: 16px;
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.containerMain {
+	display: grid;
+	background-color: beige;
+	width: 100%;
+	background-size: cover;
+}
+.containerH2 {
+	h2 {
+		text-align: center;
+		align-items: center;
+		color: $color_1;
+		button {
+			background-color: peru;
+			height: 80px;
+			width: 300px;
+			border-radius: 40px;
+			text-transform: uppercase;
+			font-size: 32px;
+			align-items: center;
+			text-align: center;
+			margin-top: 70px;
+		}
+	}
+}
+.containerSugerenciasTexto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	min-width: 250px;
+}
+.containerTortas {
+	flex-direction: column;
+	align-items: center;
+	margin: 100px;
+	a {
+		img {
+			display: flex;
+			height: 400px;
+			width: 260px;
+			border-radius: 60px;
+			align-items: center;
+			text-align: center;
+			margin-top: 100px;
+		}
+	}
+	p {
+		align-items: center;
+		text-align: center;
+		margin-top: 100px;
+		a {
+			align-items: center;
+			text-align: center;
+			color: $color_1;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 2rem;
+		}
+	}
+}
+.containerCafes {
+	flex-direction: column;
+	align-items: center;
+	margin: 100px;
+	a {
+		img {
+			display: flex;
+			height: 400px;
+			width: 260px;
+			border-radius: 60px;
+			align-items: center;
+			text-align: center;
+			margin-top: 100px;
+		}
+	}
+	p {
+		align-items: center;
+		text-align: center;
+		margin-top: 100px;
+		a {
+			align-items: center;
+			text-align: center;
+			color: $color_1;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 2rem;
+		}
+	}
+}
+.containerPanes {
+	flex-direction: column;
+	align-items: center;
+	margin: 100px;
+	a {
+		img {
+			display: flex;
+			height: 400px;
+			width: 260px;
+			border-radius: 60px;
+			align-items: center;
+			text-align: center;
+			margin-top: 100px;
+		}
+	}
+	p {
+		align-items: center;
+		text-align: center;
+		margin-top: 100px;
+		a {
+			align-items: center;
+			text-align: center;
+			color: $color_1;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 2rem;
+		}
+	}
+}
+.containerVideo {
+	display: flex;
+	height: 1200px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	background-color: rgb(65, 64, 64);
+	iframe {
+		height: 920px;
+		width: 1280px;
+		border-radius: 60px;
+	}
+}
+.containerImagenMenuBanner {
+	width: 100%;
+	height: 1200px;
+	background-image: url(../imagenes/blog-1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.containerImagenesMenu {
+	display: flex;
+	background-color: beige;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 250px;
+}
+#carouselExample {
+	width: 600px;
+	height: 600px;
+}
+#carouselExampleFade {
+	width: 600px;
+	height: 600px;
+}
+.carousel-item {
+	width: 600px;
+	height: 600px;
+	background-position: center;
+	img {
+		border-radius: 20px;
+	}
+}
+.containerT1 {
+	display: flex;
+	img {
+		display: flex;
+		height: 350px;
+		width: 350px;
+		border-radius: 20px;
+	}
+}
+.containerT2 {
+	display: flex;
+	img {
+		display: flex;
+		height: 350px;
+		width: 350px;
+		border-radius: 20px;
+	}
+}
+.containerT3 {
+	display: flex;
+	img {
+		display: flex;
+		height: 350px;
+		width: 350px;
+		border-radius: 20px;
+	}
+}
+.containerMainCarouselNosotros {
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+}
+.containerFooter {
+	text-align: center;
+	a {
+		text-align: center;
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+@media screen and (max-width: 450px) {
+	.containerSugerenciasTexto {
+		flex-direction: column;
+	}
+	.containerVideo {
+		width: 100%;
+		height: 100%;
+		iframe {
+			width: 250px;
+			height: 500px;
+			padding: 20px;
+		}
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+	.containerSugerenciasTexto {
+		flex-direction: column;
+	}
+}
+
+
+
+.containerTexto h1 {
+	@include texto-destacado;
+}
+  
+.containerH2 h2 button {
+	@include boton-grande;
+}
