@@ -20,6 +20,7 @@
   --color-yellowGreen: #cef54b;
   --color-gray: #eef4f8;
   --color-gray2: #f0eff5;
+  --color-footer: #414040 ;
   --color-main-grad: linear-gradient(to right, #ffed4f 0%, #e73f7f 100%);
 }
 
@@ -40,6 +41,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+h1{
+  font-size: var(--title-size);
 }
 
 .containerBanner {
@@ -205,33 +211,20 @@
   background-size: cover;
 }
 
-.containerImagenesMenu {
-  display: flex;
+
+.containerImagenesMenu{
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 2rem;
+  padding: 2rem;
   background-color: beige;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 250px;
 }
 
-#carouselExample {
-  width: 600px;
-  height: 600px;
-}
-
-#carouselExampleFade {
-  width: 600px;
-  height: 600px;
-}
-
-.carousel-item {
-  width: 600px;
-  height: 600px;
-  background-position: center;
-}
-.carousel-item img {
-  border-radius: 20px;
+.carousel3{
+  height: fit-content;
+  width: fit-content;
 }
 
 .containerT1 {
@@ -271,13 +264,44 @@
   height: 100%;
 }
 
-.containerFooter {
-  text-align: center;
+.containerFooters{
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-footer)
 }
-.containerFooter a {
-  text-align: center;
-  text-decoration: none;
-  color: black;
+
+.containerGridFooters button{
+  background-color: antiquewhite;
+  border-radius: 45%;
+  width: 135px;
+  height: 45px;
+}
+
+/* Animacion nosotros*/
+.containerAnimacion1{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+.containerAnimacion1 img{
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -300,6 +324,7 @@
   }
 }
 
+/* Formulario contacto */
 .containerFormulario{
   background-color: beige;
   height: 700px;
@@ -311,10 +336,17 @@
   margin: auto;
   margin-top: 10px;
   border-radius: 20px;
+  padding: 10px;
 }
 
+
 .containerBodyContacto{
-  background-color: #f9a41f;
+  background-image: url(../imagenes/blog-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 .carousel-item img {
@@ -323,4 +355,12 @@
 
 .carousel-item:hover img {
   filter: blur(3px);
+}
+
+.containerH2:hover {
+  filter: brightness(85%);
+}
+
+.containerFooters button:hover {
+  filter: brightness(85%);
 }
